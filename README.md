@@ -16,7 +16,7 @@ JS logika je dobro izvedena, međutim nekoliko “brzih” uzastopnih klikova na
 // hvala na prijedlogu, podešeno preko html disable atributa.
 
 Pohvalno je što je cijela js logika “enkapsulirana”. Proučiti i rješiti zadatak koristeći noviju ES6/ECMASCRIPT2015 sintaksu skupa sa Objektno-orijentiranim principom (Klase i objekti)
-// budući je riječ o jednom elementu odnosno samo slideru, osnovnu funkciju MGSlider, prepisala sam u jednu klasu. Nije mi izgledalo funkcionalno istu podijeliti na više klasa, ili sub klasa. Ostale elemente ostavila sam u obliku funkcija (sada metoda) te postavila u konstruktor funkciju kako bih mogla zadržati varijablu _this kao globalnu i nepromijenjenu kroz metode i callback funkcije (problem je radila callback funkcija .on('click') metode i referenciranje na globalni objekt i na sam button) 
+// budući je riječ o jednom elementu odnosno samo slideru, osnovnu funkciju MGSlider, prepisala sam u jednu klasu. Ostale elemente ostavila sam u obliku funkcija (metoda) te postavila u konstruktor funkciju kako bih mogla zadržati varijablu _this kao globalnu i nepromijenjenu kroz metode i callback funkcije (problem je radila callback funkcija .on('click') metode i referenciranje na globalni objekt i na sam button) 
 // upotreba ES6/ECMASCRIPT2015 u imenovanju varijabli (var u let i const), pisanje i imenovanje funkcija preko arrow funkcija.
 
 Implementirati “transpile” feature pomoću babel-a za podršku starijim browserima (https://babeljs.io/)
