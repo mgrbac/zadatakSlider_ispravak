@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head> 
+	<title> MG - Frontend zadatak Slider </title>
+  
+	<meta charset="UTF-8">  
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="author" content="Maja Grbac">
+	<meta name="description" content="Frontend zadatak - Slider">
+	<meta name="keywords" content="slider, fotografije, zadatak, factory">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/logo_fav.png" type="image/png" sizes="16x16">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col col-4">
+				<div class="gray-placeholder"></div>
+			</div>
+			<div class="col col-8">
+				<div class="gray-placeholder"></div>
+			</div>
+		</div>
+	</div>
+		
+	<!-- slider section -->
+	
+	<section class="slider-section">
+		<div class="container">
+			<div class="row">
+				<div class="col col-7-slider">
+					<div id="slider-1" class="slider">
+						<div class="slider-wrapper">	
+							<img src="img/slider-image-1.jpg" alt="img-1" class="slide" >
+							<img src="img/slider-image-2.jpg" alt="img-2" class="slide">
+							<img src="img/slider-image-3.jpg" alt="img-3" class="slide">
+							<img src="img/slider-image-4.jpg" alt="img-4" class="slide">
+							<img src="img/slider-image-5.jpg" alt="img-5" class="slide">
+							<img src="img/slider-image-6.jpg" alt="img-6" class="slide">
+							<img src="img/slider-image-7.jpg" alt="img-7" class="slide">
+							<img src="img/slider-image-8.jpg" alt="img-8" class="slide">
+							<img src="img/slider-image-9.jpg" alt="img-9" class="slide">
+						</div>	
+					</div>
+					<div id="slider-2" class="slider">
+						<div class="slider-wrapper">	
+							<img src="img/slider-image-6.jpg" alt="img-6" class="slide">
+							<img src="img/slider-image-7.jpg" alt="img-7" class="slide">
+							<img src="img/slider-image-8.jpg" alt="img-8" class="slide">
+							<img src="img/slider-image-9.jpg" alt="img-9" class="slide">
+							<img src="img/slider-image-1.jpg" alt="img-1" class="slide" >
+							<img src="img/slider-image-2.jpg" alt="img-2" class="slide">
+							<img src="img/slider-image-3.jpg" alt="img-3" class="slide">
+							<img src="img/slider-image-4.jpg" alt="img-4" class="slide">
+							<img src="img/slider-image-5.jpg" alt="img-5" class="slide">
+						</div>	
+					</div>
+				</div>
+				<div class="col col-1-nav">
+					<div class="slider-nav">
+						<button type="button" id="slide-prev" class="slider-nav-btn slider-nav-btn-prev"></button>
+						<button type="button" id="slide-next" class="slider-nav-btn slider-nav-btn-next"></button>
+					</div>
+				</div>
+				<div class="col col-4-text">
+					<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit </h3>
+					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	<div class="container">
+		<div class="row">
+			<div class="col col-12">
+				<div class="gray-placeholder"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/mg-slider.js"></script>
+	<script>
+		const slider = new MGSlider({
+			debug: true, // remove in production
+		});
+		const slider2 = new MGSlider({
+			selectors: {
+				sliderId: 'slider-2',
+			},
+			debug: true, // remove in production
+		});
+	</script>
+
+</body>
+</html>

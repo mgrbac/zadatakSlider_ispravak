@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col-1 {max-width:(100%/12);}
+.col-2 {max-width:2*(100%/12);}
+.col-3 {max-width:3*(100%/12);}
+.col-4 {max-width:4*(100%/12);}
+.col-5 {max-width:5*(100%/12);}
+.col-6 {max-width:6*(100%/12);}
+.col-7 {max-width:7*(100%/12);}
+.col-8 {max-width:8*(100%/12);}
+.col-9 {max-width:9*(100%/12);}
+.col-10 {max-width:10*(100%/12);}
+.col-11 {max-width:11*(100%/12);}
+.col-12 {max-width:12*(100%/12);}
+
+.col-7-slider {max-width:7*(100%/12);}
+.col-1-nav {max-width:(100%/12);}
+.col-4-text {max-width: 4*(100%/12);}
+
+
+/* ----------------------------- MEDIA --------------------------------------- */
+
+
+@media (min-width: 576px){
+	.container {max-width: 540px;}
+}
+@media (min-width: 768px){
+	.container {max-width: 720px;}
+}
+@media (min-width: 992px){
+	.container {max-width: 960px;}
+}
+@media (min-width: 1200px){
+	.container {max-width: 1140px;}
+}
+@media (max-width: 576px){
+	.container {max-width: 90%;}
+}
