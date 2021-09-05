@@ -1,0 +1,1 @@
+# zadatakSlider_ispravak
