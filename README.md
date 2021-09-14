@@ -1,7 +1,20 @@
+# zadatakSlider_ispravak_2
+
+Niže uz vaše prijašnje komentare dopisujem svoje kojima opisujem učinjeno:
+
+Dosta je toga sada ispravljeno što je odlično, međutim potrebno je još doraditi js logiku. Naime sva logika je zapravo odrađena u constructoru. Potrebno je “bolje” razdvojiti/prebaciti funkcije iz constructora u “baš prave” metode.
+	// js logika je prepisana na način da su 
+		- varijable prepisane u class fieldove
+		- u constructoru ostavljeno samo potrebno za inicijalizaciju slidera
+		- sve ostale arrow funkcije prebačene su u metode
+
+Proučiti [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes]
+
+
+
 # zadatakSlider_ispravak
 
-Pozdrav,
-niže uz vaše prijašnje komentare dopisujem svoje kojima opisujem učinjeno:
+Niže uz vaše prijašnje komentare dopisujem svoje kojima opisujem učinjeno:
 
 HTML kod je dobro pisan i formatiran, imena klasa su također dobro izvedena
 // zahvaljujem
